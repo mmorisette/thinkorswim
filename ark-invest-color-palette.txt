@@ -1,0 +1,24 @@
+# Purple
+CreateColor(130,100,255)
+
+# Gold
+CreateColor(254,237,99)
+
+# Green
+CreateColor(56,217,150)
+
+# Dark Green
+CreateColor(32,112,92)
+
+# Red 
+CreateColor(217,81,56)
+
+# Dark Red
+CreateColor(114,46,45)
+
+# Gray
+CreateColor(222,223,227)
+
+# White
+CreateColor(242,243,246)
+
