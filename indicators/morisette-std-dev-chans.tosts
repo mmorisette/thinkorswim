@@ -1,0 +1,57 @@
+#
+## Title: Standard Deviation Channels x3
+## Author: Matt Morisette
+## Date: 1/19/2022
+## Original Study: TDA StandardDevChannel
+#
+
+
+
+## GLOBAL START ##
+input price = close;
+input fullRange = Yes;
+input length = 21;
+
+def regression;
+def stdDeviation;
+if (fullRange) {
+    regression = InertiaAll(price);
+    stdDeviation = stdevAll(price);
+} else {
+    regression = InertiaAll(price, length);
+    stdDeviation = stdevAll(price, length);
+}
+
+plot MiddleLine = regression;
+MiddleLine.SetDefaultColor(CreateColor(255, 236, 74));
+MiddleLine.SetStyle(Curve.SHORT_DASH);
+## GLOBAL END ##
+
+
+
+## DEVIATION 1 ##
+input deviation_1 = 1.0;
+plot upperLine_1 = regression + deviation_1 * stdDeviation;
+plot lowerLine_1 = regression - deviation_1 * stdDeviation;
+upperLine_1.SetDefaultColor(CreateColor(255, 1, 154));
+lowerLine_1.SetDefaultColor(CreateColor(255, 1, 154));
+
+
+
+## DEVIATION 2 ##
+input deviation_2 = 2.0;
+plot upperLine_2 = regression + deviation_2 * stdDeviation;
+plot lowerLine_2 = regression - deviation_2 * stdDeviation;
+upperLine_2.SetDefaultColor(CreateColor(255, 249, 202));
+lowerLine_2.SetDefaultColor(CreateColor(255, 249, 202));
+upperLine_2.SetStyle(Curve.SHORT_DASH);
+lowerLine_2.SetStyle(Curve.SHORT_DASH);
+
+
+
+## DEVIATION 3 ##
+input deviation_3 = 3.0;
+plot upperLine_3 = regression + deviation_3 * stdDeviation;
+plot lowerLine_3 = regression - deviation_3 * stdDeviation;
+upperLine_3.SetDefaultColor(CreateColor(255, 129, 205));
+lowerLine_3.SetDefaultColor(CreateColor(255, 129, 205));

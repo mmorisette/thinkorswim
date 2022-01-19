@@ -1,0 +1,25 @@
+## Hollywood Cerise
+Hex = ##FF019A
+CreateColor(255, 1, 154)
+Alt = CreateColor(255, 129, 205)
+
+## Electric Violet
+Hex = ##9B00E8
+CreateColor(155, 0, 232)
+
+## Blue
+Hex = ##290CFF
+CreateColor(41, 12, 255)
+
+## Blue Ribbon
+Hex = ##0161E8
+CreateColor(1, 97, 232)
+
+## Cyan/Aqua
+Hex = ##00F1FF
+CreateColor(0, 241, 255)
+
+## Gorse
+Hex = #ffec4a
+CreateColor(255, 236, 74)
+Alt = CreateColor(255, 249, 202)
