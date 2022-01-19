@@ -1,0 +1,19 @@
+# Hollywood Cerise
+#FF019A
+CreateColor(255, 1, 154)
+
+# Electric Violet
+#9B00E8
+CreateColor(155, 0, 232)
+
+# Blue
+#290CFF
+CreateColor(41, 12, 255)
+
+# Blue Ribbon
+#0161E8
+CreateColor(1, 97, 232)
+
+# Cyan/Aqua
+#00F1FF
+CreateColor(0, 241, 255)
